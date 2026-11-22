@@ -1,0 +1,306 @@
+/* ===== Layout general ===== */
+.app {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 32px 16px;
+}
+
+.app > h1 {
+  color: var(--text-h);
+  font-size: 40px;
+  margin: 0 0 32px;
+}
+
+.app-section {
+  padding: 24px 0 40px;
+  border-top: 1px solid var(--border);
+}
+
+.app-section > h2 {
+  color: var(--text-h);
+  font-size: 24px;
+  margin: 0 0 20px;
+}
+
+/* ===== Ejercicio 1: Tarjetas de producto ===== */
+.ej1-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.ej1-card {
+  border: 1px solid #ffffff;
+  padding: 24px;
+  border-radius: 6px;
+  text-align: left;
+  min-width: 200px;
+}
+
+.ej1-card h3 {
+  font-size: 32px;
+  margin-top: 0;
+  margin-bottom: 16px;
+  color: #ffffff;
+}
+
+.ej1-card p {
+  margin: 0 0 8px;
+  color: lightgray;
+}
+
+/* ===== Ejercicio 2: Contador ===== */
+.ej2-card {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 32px;
+  border-radius: 8px;
+  text-align: left;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.ej2-card h3 {
+  font-size: 56px;
+  margin: 0;
+  padding: 10px;
+  color: #ffffff;
+}
+
+.ej2-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.ej2-buttons button {
+  padding: 8px 16px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.ej2-card p {
+  margin: 0;
+  color: red;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* ===== Ejercicio 3: Mostrar / ocultar respuesta ===== */
+.ej3-question {
+  border: 1px solid #ffffff33;
+  padding: 24px;
+  border-radius: 8px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.ej3-question h3 {
+  margin: 0;
+  color: #ffffff;
+}
+
+.ej3-question button {
+  background-color: transparent;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.ej3-question p {
+  margin: 0;
+  color: white;
+  line-height: 1.5;
+}
+
+/* ===== Ejercicio 4: Conversor de temperatura ===== */
+.ej4-card {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 32px;
+  border-radius: 8px;
+  text-align: left;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.ej4-card input {
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background: transparent;
+  color: #ffffff;
+  font-size: 18px;
+  width: 100px;
+}
+
+.ej4-card h2 {
+  font-size: 56px;
+  margin: 0;
+  color: #ffffff;
+  line-height: 1;
+}
+
+.ej4-card p {
+  color: red;
+  margin: 0;
+  font-size: 18px;
+}
+
+/* ===== Ejercicio 5: Lista de compras ===== */
+.ej5-card {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 32px;
+  border-radius: 8px;
+  text-align: left;
+  width: 400px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.ej5-input-group {
+  display: flex;
+  gap: 12px;
+}
+
+.ej5-input-group input {
+  flex: 1;
+  min-width: 0;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background: transparent;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.ej5-input-group button {
+  background-color: rgb(39, 209, 17);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.ej5-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.ej5-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.ej5-item button {
+  background-color: rgb(226, 40, 40);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.ej5-list p {
+  color: var(--text);
+  margin: 0;
+  text-align: center;
+}
+
+/* ===== Ejercicio 6: Buscador de lenguajes ===== */
+.ej6-card {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 32px;
+  border-radius: 8px;
+  text-align: left;
+  width: 400px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.ej6-card input {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background: transparent;
+  color: #ffffff;
+  font-size: 16px;
+  width: 100%;
+}
+
+.ej6-card input:focus {
+  outline: none;
+  border: 2px solid greenyellow;
+}
+
+.ej6-card p {
+  margin: 0;
+  color: var(--text);
+  font-size: 16px;
+}
+
+.ej6-list {
+  padding-left: 24px;
+  margin: 0;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.ej6-list-item {
+  font-size: 18px;
+}
+
+/* ===== Ejercicio 7: Producto tipado con oferta ===== */
+.ej7-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.ej7-card {
+  border: 1px solid #ffffff;
+  padding: 24px;
+  border-radius: 6px;
+  text-align: left;
+  min-width: 200px;
+}
+
+.ej7-card h3 {
+  font-size: 32px;
+  margin-top: 0;
+  margin-bottom: 16px;
+  color: #ffffff;
+}
+
+.ej7-card p {
+  margin: 0 0 8px;
+  color: lightgray;
+}
+
+.ej7-card .ej7-oferta {
+  color: lightgreen;
+  font-weight: bold;
+}

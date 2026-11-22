@@ -1,0 +1,151 @@
+.app {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 4px;
+  background: #3b6fd4;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #2f5cb3;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 300px;
+  margin: 80px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.login input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.error {
+  color: #c0392b;
+  margin: 0;
+}
+
+.user-list {
+  display: flex;
+  gap: 30px;
+}
+
+.user-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.user-list li {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  margin-bottom: 4px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.user-list li:hover {
+  background: #f0f4ff;
+}
+
+.user-list li.selected {
+  background: #dce6fb;
+  font-weight: bold;
+}
+
+.detail {
+  flex: 1;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  align-self: flex-start;
+}
+
+.search {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+
+.search input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button.secondary {
+  background: #777;
+}
+
+button.secondary:hover {
+  background: #5f5f5f;
+}
+
+.create-form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-width: 320px;
+  margin-bottom: 24px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.create-form h2 {
+  margin: 0;
+}
+
+.create-form input,
+.create-form select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button.toggle {
+  margin-bottom: 12px;
+}
+
+.user-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.user-list li span {
+  flex: 1;
+  cursor: pointer;
+}
+
+button.delete {
+  background: #c0392b;
+  padding: 4px 10px;
+}
+
+button.delete:hover {
+  background: #a53125;
+}
